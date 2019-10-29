@@ -1,6 +1,9 @@
+//connects the queries based on the input fields after the button is clicked and then prints
+//out the data
 function printOutQuery(nameOfDay, nameOfParks, nameofTitles){
   //variable for holding the query
   var query = endpoint + "?";
+  var switchScreens = "#screen3List";
 
   //counter to check if user wanted more than one filter
   var counter = 0;
@@ -13,6 +16,7 @@ function printOutQuery(nameOfDay, nameOfParks, nameofTitles){
       query = query + "day=" + nameOfDay;
       counter = counter + 1;
     }
+
     //checks if the parks entered was not empty and adds to the query
     if(nameOfParks !== ""){
       if(counter > 0){
@@ -35,13 +39,14 @@ function printOutQuery(nameOfDay, nameOfParks, nameofTitles){
     //prints out the query and appends to the list html, by default if user enters no filters
     //it prints out the entire datbase
     $.get(query, function(response){
+      $(switchScreens).html("");
       $.each(response, function(i,v){
         $(".content").hide();
-        var switchScreens = "#screen3List";
         $(switchScreens).append("<br>" + v.park_address + "<br>");
         $(switchScreens).load("page_content/" + switchScreens.replace("#","") + ".html");
         $(switchScreens).show();
       });
     });
+
   });
 }
