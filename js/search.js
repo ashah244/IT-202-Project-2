@@ -21,29 +21,8 @@ $(document).ready(function() {
 //searchs through json file
   $("#btnSearch").on("click", function(){
     window.nameOfDay = $("#txtDay").val();
-    var query = printOutQuery(nameOfDay);
-    $(".content").hide();
-    var switchScreens = "#screen3List";
-    $(switchScreens).load("page_content/" + switchScreens.replace("#","") + ".html");
-    $(switchScreens).show();
-
-    // $.get(endpoint + "?park=" + $("#txtPark").val(),
-    //   function(response){
-    //     var switchScreens = "#screen3List";
-    //     $(switchScreens).load("page_content/" + switchScreens.replace("#","") + ".html");
-    //     $(switchScreens).show();
-    //     $.each(response, function(i,v){
-    //       $("body").append("<br>" + v.title + "<br>");
-    //     });
-    // });
-    // $.get(endpoint + "?title=" + $("#txtTitle").val(),
-    //   function(response){
-    //     var switchScreens = "#screen3List";
-    //     $(switchScreens).load("page_content/" + switchScreens.replace("#","") + ".html");
-    //     $(switchScreens).show();
-    //     $.each(response, function(i,v){
-    //       $("body").append("<br>" + v.title + "<br>");
-    //     });
-    // });
+    window.nameOfParks = $("#txtPark").val();
+    window.nameofTitles = $("#txtTitle").val();
+    var query = printOutQuery(nameOfDay, nameOfParks, nameofTitles);
   });
 });
