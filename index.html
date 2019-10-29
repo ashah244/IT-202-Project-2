@@ -7,7 +7,8 @@
 	<title>3 screen app</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	 crossorigin="anonymous">
-
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 	<style>
 		.content {
@@ -31,10 +32,10 @@
         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#screen2">Screen 2</a>
+        <a class="nav-link" href="#screen2Search">Search</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#screen3">Screen 3</a>
+        <a class="nav-link" href="#screen3List">List</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">About</a>
@@ -47,22 +48,25 @@
   <div class="content" id="home">
     Home page
   </div>
-  <div class="content" id="screen2">
-    This is screen 2
+  <div class="content" id="screen2Search">
+
+		<!-- <form action="/action_page.php"> -->
+		<input type="text" name="Day" placeholder="Type in which Day" id="txtDay"><br>
+		<!-- <input type="text" name="Parks" placeholder="Type in the park" id="txtPark"><br>
+		<input type="text" name="Title" placeholder="Type in Movie Title" id="txtTitle"><br> -->
+		<input type="submit" value="Submit" id="btnSearch">
+		<script src="js/list.js"></script>
+		<script src="js/search.js"></script>
+
   </div>
-  <div class="content" id="screen3">
-    This is screen 3
+  <div class="content" id="screen3List">
+		Please use the Search button first
   </div>
   <div class="content" id="about">
     About
   </div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
-
-  <script src="js/script.js"></script>
 
   </body>
 
