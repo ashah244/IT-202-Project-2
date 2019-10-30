@@ -33,6 +33,7 @@ $(document).ready(function() {
     window.nameOfParks = $("#txtPark").val();
     window.nameofTitles = $("#txtTitle").val();
     var query = printOutQuery(nameOfDay, nameOfParks, nameofTitles);
+    initMap(nameOfDay, nameOfParks, nameofTitles);
     clearInput();
   });
 
