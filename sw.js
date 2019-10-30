@@ -5,7 +5,7 @@ self.addEventListener('install', e => {
       return cache.addAll([
         '/IT-202-Project-2',
         '/IT-202-Project-2/index.html',
-        '/IT-202-Project-2/index/page_content/about.html',
+        '/IT-202-Project-2/page_content/about.html',
         '/IT-202-Project-2/js/list.js',
         '/IT-202-Project-2/js/search.js',
         '/IT-202-Project-2/js/map.js'
