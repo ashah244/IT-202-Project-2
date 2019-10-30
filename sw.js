@@ -1,7 +1,7 @@
 importScripts('/IT-202-Project-2/cache-polyfill.js');
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open('hi').then(cache => {
+    caches.open('hi').then(function(cache){
       return cache.addAll([
         '/IT-202-Project-2',
         '/IT-202-Project-2/index.html',
