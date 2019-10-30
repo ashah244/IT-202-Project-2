@@ -9,7 +9,7 @@ self.addEventListener('install', e => {
         '/IT-202-Project-2/js/list.js',
         '/IT-202-Project-2/js/search.js',
         '/IT-202-Project-2/js/map.js'
-      ])
+      ]);
     })
   );
 });
