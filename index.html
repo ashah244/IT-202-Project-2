@@ -15,6 +15,11 @@
 			display: none;
 			margin: 1em;
 		}
+		#map {
+			height: 800px;  /* The height is 400 pixels */
+			width: 100%;  /* The width is the width of the web page */
+ 		}
+		/* Set the size of the div element that contains the map */
 	</style>
 
 </head>
@@ -57,6 +62,7 @@
 		<input type="text" name="Parks" placeholder="Type in the park" id="txtPark"><br>
 		<input type="text" name="Title" placeholder="Type in Movie Title" id="txtTitle"><br>
 		<input type="submit" value="Submit" id="btnSearch">
+		<script src="js/map.js"></script>
 		<script src="js/list.js"></script>
 		<script src="js/search.js"></script>
 
@@ -65,6 +71,10 @@
 		Please go to the Search tab and search through the database
   </div>
 	<div class="content" id="screen4Map">
+		<div id="map"></div>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAyTM2EArvlO3fNMLOKXwk4avkeZJVyLY&callback=initMap">
+		</script>
 		Here is a map
 	</div>
   <div class="content" id="about">
