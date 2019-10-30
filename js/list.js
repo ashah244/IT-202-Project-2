@@ -44,7 +44,6 @@ function printOutQuery(nameOfDay, nameOfParks, nameofTitles){
         $(".content").hide();
         $(switchScreens).append("<br>" + "Which day: " + v.day + "<br>" + v.park + " " + v.park_phone + "<br>" + v.park_address + "<br>" + v.title + " " + v.date
       + " " + v.rating + "<br>" + "Closed Captions: " + v.cc + "<br>");
-        $(switchScreens).load("page_content/" + switchScreens.replace("#","") + ".html");
         $(switchScreens).show();
       });
     });
