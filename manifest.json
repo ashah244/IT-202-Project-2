@@ -3,12 +3,12 @@
   "name": "Google Maps",
   "icons": [
     {
-      "src": "/IT-202-Project-2/icons-128",
+      "src": "/IT-202-Project-2/icons-128.png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "/IT-202-Project-2/icons-512",
+      "src": "/IT-202-Project-2/icons-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
