@@ -17,7 +17,7 @@
  *
  */
 importScripts('/IT-202-Project-2/cache-polyfill.js');
-const cacheName = `Chicago Park District Movies`;
+const cacheName = 'Chicago Park District Movies';
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
